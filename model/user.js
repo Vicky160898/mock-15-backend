@@ -7,7 +7,7 @@ const UserSchema = new Schema(
     type: { type: String, required: true },
     correct_answer: { type: String, required: true },
     question: { type: String, required: true },
-    incorrect_answers: { type:String , enum:[]},
+    incorrect_answers: [String],
   },
   { versionKey: false, timestamps: true }
 );
